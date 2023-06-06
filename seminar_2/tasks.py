@@ -31,16 +31,34 @@
 
 # вход количество дней и темпартура в день, выход самая длинная оттпепель сколько дней
 
-n = int(input('Введите количество дней: '))
-count = 0
-max_count = 0
+# n = int(input('Введите количество дней: '))
+# count = 0
+# max_count = 0
 
-for n in range (1, n+1):
-    tem = int(input("Введите температуру: "))
-    if tem > 0:
-        count+=1
-    elif tem<0:
-        count=0
-    if count>max_count:
-        max_count=count
-print(max_count)
+# for n in range (1, n+1):
+#     tem = int(input("Введите температуру: "))
+#     if tem > 0:
+#         count+=1
+#     elif tem<=0:
+#         count=0
+#     if count>max_count:
+#         max_count=count
+# print(max_count)
+
+
+
+
+# вход количество арбузов, вторая строка массы арбузов. найти макс и мин
+
+
+
+# n = int(input('Введите количество арбузов: '))
+# mmax=0
+# mmin=999
+# for i in range(n):
+#     m = int(input("Введите массу арбуза: "))
+#     if m>mmax:
+#         mmax=m
+#     if m<mmin:
+#         mmin=m
+# print(mmax, mmin)
