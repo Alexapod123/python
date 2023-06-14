@@ -4,16 +4,21 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-# def stepen(a, b):
-#     if b==1:
-#         return a
-#     return (a*stepen(a,b-1))
+def stepen(a, b):
+    if b>0:
+        if b==1:
+            return a
+        return (a*stepen(a,b-1))
+    else:
+        if b==-1:
+            return 1/a
+        return (1/(a*stepen(a, b+1)))
     
 
-# a = int(input('введите число а: '))
-# b = int(input('ввелите число b: '))
+a = int(input('введите число а: '))
+b = int(input('ввелите число b: '))
 
-# print(stepen(a,b))
+print(stepen(a,b))
 
 #  Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел. 
 # Из всех арифметических операций допускаются только +1 и -1. Также нельзя использовать циклы.
@@ -21,17 +26,17 @@
 # 2 2
 #     4 
 
-def sum(a, b):
-    if b > 0:
-        if b==1:
-            return a+1
-        return sum(a,b-1)+1
-    else:
-        if b == -1:
-            return a-1
-        return sum(a, b+1)-1
+# def sum(a, b):
+#     if b > 0:
+#         if b==1:
+#             return a+1
+#         return sum(a,b-1)+1
+#     else:
+#         if b == -1:
+#             return a-1
+#         return sum(a, b+1)-1
     
 
-a = int(input('введите число а: '))
-b = int(input('ввелите число b: '))
-print(sum(a,b))
+# a = int(input('введите число а: '))
+# b = int(input('ввелите число b: '))
+# print(sum(a,b))
